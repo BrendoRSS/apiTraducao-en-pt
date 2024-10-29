@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="divImgTradutor">
+        
+        <h1>Tradutor</h1>
+    </div>
+    <div class="divInputs">
+        <div class="divtexto">
+            <textarea id="textoParaTraducao" oninput="adjustHeight(this)" type="text"
+                placeholder="Digite um texto"></textarea>
+            <textarea type="text" oninput="adjustHeight(this)" placeholder="Texto traduzido"
+                id="textoTraduzido"></textarea>
+        </div>
+    </div>
+    <div class="divButtonTraduzir">
+        <button onclick="traduzir()">Traduzir</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
