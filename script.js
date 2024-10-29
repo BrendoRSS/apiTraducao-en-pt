@@ -6,7 +6,7 @@ async function traduzir() {
     const textoParaTraducao = document.getElementById("textoParaTraducao").value;
     let textoTraduzido = document.getElementById("textoTraduzido")
   
-    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(textoParaTraducao)}&langpair=en|pt`);
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(textoParaTraducao)}&langpair=en|pt-br`);
   
     const resultado = await res.json();
     console.log(resultado.responseData.translatedText);
